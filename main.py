@@ -3,6 +3,9 @@ import turtle
 # Define a class to create a dynamic flower
 class Flower:
     def __init__(self, num_petals, petal_length, color):
+        self.num_petals = num_petals
+        self.petal_length = petal_length
+        self.color = color
         self.t = turtle.Turtle()
         self.t.speed(10)
 
@@ -33,8 +36,8 @@ flower = Flower(6, 80, "red")
 flower.draw_flower()
 
 
-change_color("yellow")  
-set_number_of_petals(8) 
+flower.change_color("yellow")  
+flower.set_number_of_petals(20) 
 
 # End the turtle program
 turtle.done()
